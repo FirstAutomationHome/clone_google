@@ -1,0 +1,175 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+} */
+body {
+    background-color: #202124;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none; /*quita todas las lineas de las etiquetas a*/
+    cursor: pointer; /*cuando pase el mouse encima de la etiqueta a, coloca una manita*/
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none; /*Quitar los puntos de la lista*/
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a {
+    margin-right: 10px;
+    color: white;
+}
+nav .nav-right-section .menu-icon {
+    /* background-image: url('https://thenounproject.com/api/private/icons/3077554/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0'); */
+    background-image: url('https://us.123rf.com/450wm/hedgehogvector/hedgehogvector1605/hedgehogvector160500845/56659711-opciones-icono.jpg?ver=6');
+    background-repeat: no-repeat; /*evita que se repita la imagen*/
+    background-position: center; /*para que la imagen quede al centro*/
+    background-size: contain; /*para que la imagen esté o se aproxime al tamaño del contenedor*/
+    width: 27px;
+    height: 27px;
+}
+nav .nav-right-section img {
+    border-radius: 50%; /*deja la imagen en un circulo*/
+    margin-left: 10px;
+    width: 33px;
+    height: 33px;
+}
+main {
+    margin-top: 80px;
+    text-align: center;
+}
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img {
+    width: 300px;
+    height: 90px;
+}
+main .main-input {
+    width: 530px;
+    margin: 0 auto; /*auto para que se posicione en la parte del medio*/
+    margin-bottom: 30px;
+}
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1.5px solid #dfe1e5; /*color del borde del contenedor*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202124;
+}
+main .main-input input {
+    width: 450px;
+    height: 30px;
+    border: none; 
+    outline: none; /*esto es para quitar el borde del input cuando se coloca el mouse*/
+    background-color: #202124;
+}
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 white; /*Genera la sobre al elemento*/
+    border-color: white;
+}
+/*Colocar los iconos del buscador*/
+main .main-input .search-icon {
+    /* background-image: url('https://w7.pngwing.com/pngs/456/948/png-transparent-computer-icons-desktop-web-search-engine-wordpress-com-search-icon-search-logo-website-circle-wordpresscom-thumbnail.png'); */
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsfCTWk5t9j6icC57_5TwwmGOPEEOHIoRMYnnkQG_yt4IeHR4xMNoOVQt7op4ZfRj_-o&usqp=CAU'); */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center; /*que se centre la imagen*/
+    background-size: contain; /*para que se ubique dentro del contenedor*/
+    width: 16px; /*ancho de la imagen*/
+    height: 16px; /*alto de la imagen*/
+    padding-right: 10px;
+}
+main .main-input input {
+    caret-color: white;
+}
+main .main-input .micro-icon{
+    background-image: url('https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png');
+    background-repeat: no-repeat;
+    background-position: center; /*que se centre la imagen*/
+    background-size: contain; /*para que se ubique dentro del contenedor*/
+    width: 29px; /*ancho de la imagen*/
+    height: 29px; /*alto de la imagen*/
+    cursor: pointer;
+}
+/*botones abajo del buscador*/
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div {
+    display: inline-block;
+}
+main .main-buttons button {
+    height: 36px;
+    /* background-color: #f2f2f2; */
+    background-color: #303134;
+    border: 0;
+    font-size: 14px;
+    /* color: #5f6368; */
+    color: white;
+    border-radius: 5px;
+    padding: 0 15px; /* 0 arriba y abajo y 15px derecha y izquierda*/
+    margin-right: 15px;
+}
+main .main-buttons button:hover{
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    box-shadow: 0 1px 1px #000001;
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute; /*con este y con el bottom puedo asegurar que el footer esté hasta abajo de la página*/
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*cada 1fr es una fracción. Le pido que tanga dos fracciones en el footer*/
+    align-items: center;
+    font-size: 13px;
+    /* background-color: #f2f2f2; */
+    background-color: #131313;
+    border-top: 0.5px solid #636568;
+}
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0; /*ul por default tiene un padding left, por eso lo reseteamos en cero*/
+}
+footer .footer-left {
+    justify-content: left;
+}
+footer .footer-right {
+    justify-content: right;
+}
+footer ul li a{
+    margin: 10px;
+    color: #999da2;
+}
